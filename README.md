@@ -1,3 +1,3 @@
-# react-intro
+# Javascript introduction
 
-### [Demo](https://frentsel.github.io/react-intro/)
+## [Demo](https://frentsel.github.io/js-intro/)
