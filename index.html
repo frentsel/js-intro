@@ -58,21 +58,35 @@
 				<section id="props">
 					<iframe src="https://codepen.io/Shulz/pen/pqbdYe?editors=0012" width="1024" height="680" frameborder="0"></iframe>
 				</section>
+				<section id="ifelse-pre" data-background="https://media.giphy.com/media/VtmDbiarjdN5u/giphy.gif">
+					<h1>If Else</h1>
+				</section>
 				<section id="ifelse">
 					<iframe src="https://codepen.io/Shulz/pen/dwXgPM?editors=0012" width="1024" height="680" frameborder="0"></iframe>
+				</section>
+				<section id="loops-pre" data-background="https://media.giphy.com/media/54Y2fvRIDd9ovWsxej/giphy.gif">
+					<h1 class="blue">Циклы</h1>
 				</section>
 				<section id="loops">
 					<iframe src="https://codepen.io/Shulz/pen/bOemVL?editors=0012" width="1024" height="680" frameborder="0"></iframe>
 				</section>
-				<section id="question" data-background="https://media.giphy.com/media/kVRBvsiOyBM8o/giphy.gif">
+				<section id="next" data-background="https://media.giphy.com/media/kVRBvsiOyBM8o/giphy.gif">
 					<h1>Всем все понятно?</h1>
 					<h2>Идем дальше?</h2>
 				</section>
 				<section id="functions">
 					<iframe src="https://codepen.io/Shulz/pen/wRWYMy?editors=0012" width="1024" height="680" frameborder="0"></iframe>
 				</section>
+				<section id="dom-pre" data-background="https://pracownia-projekty.dom.pl/images/376/28788_wizualizacje1_dn_kendra_xs_ce.jpg">
+					<h1 class="blue">DOM</h1>
+					<h2 class="blue">Document Object Model</h2>
+				</section>
 				<section id="dom">
 					<iframe src="https://codepen.io/Shulz/pen/maEzRw?editors=1010" width="1024" height="680" frameborder="0"></iframe>
+				</section>
+				<section id="bom-pre" data-background="https://www.gsqi.com/images/utf-bom-seo.jpg">
+					<h1>BOM</h1>
+					<h2>The Browser Object Model</h2>
 				</section>
 				<section id="bom">
 					<iframe src="https://codepen.io/Shulz/pen/aPZRWO?editors=1010" width="1024" height="680" frameborder="0"></iframe>
@@ -155,13 +169,6 @@
 			]
 		});
 
-		Reveal.addEventListener('ready', function(event) {
-			var sections = document.querySelectorAll('[data-background$=".gif"]');
-			[].forEach.call(sections, function(el) {
-				(new Image()).src = el.getAttribute('data-background');
-			});
-		});
-
 		var particlesInit = function() {
 
 			Particles.init({
@@ -184,6 +191,11 @@
 		if (window.location.hash === '#/finish') {
 			particlesInit();
 		}
+
+		var sections = document.querySelectorAll('[data-background$=".gif"]');
+		[].forEach.call(sections, function(el) {
+			(new Image()).src = el.getAttribute('data-background');
+		});
 
 	</script>
 </body>
